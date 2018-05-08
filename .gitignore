@@ -1,0 +1,22 @@
+# User specific files
+*.suo           # Solution User Options file
+*.user          # Visual Studio user specific settings
+*.sln.docstates # User specific document states.
+**.suo
+*.userprefs
+
+# Build Results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Nuget packages
+[Pp]ackages/
+
+# Resharper files
+*.DotSettings
+*.[Rr]e[Ss]harper.user
+*_Resharper*
+*.DotSettings.user
+*.sln.cache
