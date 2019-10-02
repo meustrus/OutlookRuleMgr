@@ -13,7 +13,7 @@ namespace OutlookRuleMgr.RuleParts
         public Outlook.Rule ApplyToOutlook(Outlook.Rule rule, Rule ruleModel)
         {
             rule.Actions.MoveToFolder.Enabled = true;
-            rule.Actions.MoveToFolder.Folder = rule.Application.GetRootFolder().Folders.GetFolder(ruleModel.MoveToFolder);
+            rule.Actions.MoveToFolder.Folder = rule.Application.GetRootFolder().Folders.GetOrCreateFolder(ruleModel.MoveToFolder);
             return rule;
         }
 
