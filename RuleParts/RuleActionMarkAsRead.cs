@@ -1,11 +1,14 @@
 ﻿using System.Linq;
 using OutlookRuleMgr.Models;
+using OutlookRuleMgr.Utilities;
 using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace OutlookRuleMgr.RuleParts
 {
     public class RuleActionMarkAsRead : IRulePart
     {
+        private static readonly Logger Log = Logger.GetLogger<RuleActionMarkAsRead>();
+
         public bool IsEnabled(Outlook.Rule rule) =>
             rule.Actions
                 .OfType<Outlook.RuleAction>()
@@ -15,10 +18,7 @@ namespace OutlookRuleMgr.RuleParts
 
         public Outlook.Rule ApplyToOutlook(Outlook.Rule rule, Rule ruleModel)
         {
-            rule.Actions
-                .OfType<Outlook.RuleAction>()
-                .First(x => x.ActionType == Outlook.OlRuleActionType.olRuleActionMarkRead)
-                .Enabled = true;
+            Log.Warn($"For rule '{rule.Name}', action 'MarkAsRead' cannot be enabled through the COM interface");
             return rule;
         }
 
