@@ -69,6 +69,7 @@
     <Compile Include="RuleParts\IRulePart.cs" />
     <Compile Include="RuleParts\RuleActionAssignToCategory.cs" />
     <Compile Include="RuleParts\RuleActionClearCategories.cs" />
+    <Compile Include="RuleParts\RuleActionMarkAsRead.cs" />
     <Compile Include="RuleParts\RuleActionDeletePermanently.cs" />
     <Compile Include="RuleParts\RuleActionMoveToFolder.cs" />
     <Compile Include="RuleParts\RuleActionStopProcessingMoreRules.cs" />

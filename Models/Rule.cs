@@ -17,6 +17,7 @@ namespace OutlookRuleMgr.Models
         public List<string> AssignToCategories { get; set; }
         public bool ClearCategories { get; set; }
         public bool DeletePermanently { get; set; }
+        public bool MarkAsRead { get; set; }
         public bool StopProcessingMoreRules { get; set; }
 
         public bool ExceptIfSentToOrCcMe { get; set; }
