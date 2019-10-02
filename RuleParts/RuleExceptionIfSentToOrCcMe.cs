@@ -6,7 +6,7 @@ namespace OutlookRuleMgr.RuleParts
     public class RuleExceptionIfSentToOrCcMe : IRulePart
     {
         public bool IsEnabled(Outlook.Rule rule) => rule.Exceptions.ToOrCc.Enabled;
-        public bool IsEnabled(Models.Rule ruleModel) => ruleModel.ExceptIfSentToOrCcMe;
+        public bool IsEnabled(Rule ruleModel) => ruleModel.ExceptIfSentToOrCcMe;
 
         public Outlook.Rule ApplyToOutlook(Outlook.Rule rule, Rule ruleModel)
         {

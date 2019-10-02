@@ -77,7 +77,7 @@
     <Compile Include="RuleParts\RuleConditionFromRecipients.cs" />
     <Compile Include="RuleParts\RuleConditionOnLocalMachineOnly.cs" />
     <Compile Include="RuleParts\RuleConditionSentToOrCcMe.cs" />
-    <Compile Include="RuleParts\RuleConditionExceptIfSubjectContainsAny.cs" />
+    <Compile Include="RuleParts\RuleExceptionIfSubjectContainsAny.cs" />
     <Compile Include="RuleParts\RuleConditionSubjectContainsAny.cs" />
     <Compile Include="RuleParts\RuleConditionToRecipients.cs" />
     <Compile Include="RuleParts\RuleExceptionIfSentToOrCcMe.cs" />
