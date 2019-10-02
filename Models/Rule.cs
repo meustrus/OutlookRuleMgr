@@ -22,5 +22,6 @@ namespace OutlookRuleMgr.Models
 
         public bool ExceptIfSentToOrCcMe { get; set; }
         public List<string> ExceptIfSubjectContainsAny { get; set; }
+        public List<string> ExceptIfSubjectOrBodyContainsAny { get; set; }
     }
 }

@@ -81,6 +81,7 @@
     <Compile Include="RuleParts\RuleConditionSubjectContainsAny.cs" />
     <Compile Include="RuleParts\RuleConditionToRecipients.cs" />
     <Compile Include="RuleParts\RuleExceptionIfSentToOrCcMe.cs" />
+    <Compile Include="RuleParts\RuleExceptionIfSubjectOrBodyContainsAny.cs" />
     <Compile Include="Utilities\AssemblyExtensions.cs" />
     <Compile Include="Utilities\Json.cs" />
     <Compile Include="Utilities\Logger.cs" />
