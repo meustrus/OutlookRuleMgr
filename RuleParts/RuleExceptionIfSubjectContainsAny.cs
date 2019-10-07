@@ -4,7 +4,7 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace OutlookRuleMgr.RuleParts
 {
-    public class RuleConditionExceptIfSubjectContainsAny : IRulePart
+    public class RuleExceptionIfSubjectContainsAny : IRulePart
     {
         public bool IsEnabled(Outlook.Rule rule) => rule.Exceptions.Subject.Enabled;
         public bool IsEnabled(Rule ruleModel) => ruleModel.ExceptIfSubjectContainsAny != null;

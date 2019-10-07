@@ -69,6 +69,7 @@
     <Compile Include="RuleParts\IRulePart.cs" />
     <Compile Include="RuleParts\RuleActionAssignToCategory.cs" />
     <Compile Include="RuleParts\RuleActionClearCategories.cs" />
+    <Compile Include="RuleParts\RuleActionMarkAsRead.cs" />
     <Compile Include="RuleParts\RuleActionDeletePermanently.cs" />
     <Compile Include="RuleParts\RuleActionMoveToFolder.cs" />
     <Compile Include="RuleParts\RuleActionStopProcessingMoreRules.cs" />
@@ -76,10 +77,11 @@
     <Compile Include="RuleParts\RuleConditionFromRecipients.cs" />
     <Compile Include="RuleParts\RuleConditionOnLocalMachineOnly.cs" />
     <Compile Include="RuleParts\RuleConditionSentToOrCcMe.cs" />
-    <Compile Include="RuleParts\RuleConditionExceptIfSubjectContainsAny.cs" />
+    <Compile Include="RuleParts\RuleExceptionIfSubjectContainsAny.cs" />
     <Compile Include="RuleParts\RuleConditionSubjectContainsAny.cs" />
     <Compile Include="RuleParts\RuleConditionToRecipients.cs" />
     <Compile Include="RuleParts\RuleExceptionIfSentToOrCcMe.cs" />
+    <Compile Include="RuleParts\RuleExceptionIfSubjectOrBodyContainsAny.cs" />
     <Compile Include="Utilities\AssemblyExtensions.cs" />
     <Compile Include="Utilities\Json.cs" />
     <Compile Include="Utilities\Logger.cs" />

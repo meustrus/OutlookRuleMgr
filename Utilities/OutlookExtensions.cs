@@ -14,7 +14,7 @@ namespace OutlookRuleMgr.Utilities
             return (Outlook.MAPIFolder) outlook.Session.GetDefaultFolder(Outlook.OlDefaultFolders.olFolderInbox).Parent;
         }
 
-        public static Outlook.MAPIFolder GetFolder(this Outlook.Folders folders, string path)
+        public static Outlook.MAPIFolder GetOrCreateFolder(this Outlook.Folders folders, string path)
         {
             var pathSeparatorIndex = path.IndexOf("\\", StringComparison.Ordinal);
             var currentFolderName = pathSeparatorIndex < 0 ? path : path.Substring(0, pathSeparatorIndex);
@@ -26,7 +26,7 @@ namespace OutlookRuleMgr.Utilities
 
             return pathSeparatorIndex < 0
                 ? matchingFolder
-                : GetFolder(matchingFolder.Folders, path.Substring(pathSeparatorIndex + 1));
+                : GetOrCreateFolder(matchingFolder.Folders, path.Substring(pathSeparatorIndex + 1));
         }
 
         public static string GetEmailAddress(this Outlook.Recipient recipient)
